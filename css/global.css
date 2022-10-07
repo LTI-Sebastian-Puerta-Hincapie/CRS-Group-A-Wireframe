@@ -1,1 +1,13 @@
-ECHO is on.
+
+:root {
+    --primary-color: dodgerblue;
+    --primary-color-dark: darkblue;
+    --primary-background-color: gray;
+    --header-background-color: black;
+    --footer-background-color: black;
+}
+body {
+    background: var(--primary-background-color);
+    margin: 0 auto;
+    max-width: 70rem;
+}
