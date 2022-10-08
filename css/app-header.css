@@ -1,7 +1,17 @@
-.header-title {
+header {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+
+.header-brand-icon {
     padding: 1em;
-    text-align: center;
-    font-size: 2.5em;
-    text-decoration: underline;
+}
+
+.header-title {
+    padding: 1em;
+}
+
+.header-cart-icon {
+    padding: 1em;
 }

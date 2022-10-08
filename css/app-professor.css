@@ -1,1 +1,7 @@
-ECHO is on.
+.professor-container {
+    background: var(--primary-color-dark);
+    grid-column: 2;
+    padding: 1em;
+    color: white;
+    text-align: center;
+}
