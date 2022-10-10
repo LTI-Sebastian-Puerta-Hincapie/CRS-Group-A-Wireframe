@@ -12,9 +12,17 @@
     --secondary-color: rgb(95, 164, 233);
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 body {
     /* background: var(--primary-background-color); */
-    background-image: url("../images/earth.jpg");
+    background-image: url("../images/college-building.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
     margin: 0 auto;
     max-width: 70rem;
 }
