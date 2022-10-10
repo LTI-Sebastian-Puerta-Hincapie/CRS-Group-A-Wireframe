@@ -1,6 +1,6 @@
 
 :root {
-    --primary-color: dodgerblue;
+    --primary-color: rgb(80, 128, 177);
     --primary-color-dark: darkblue;
     --primary-background-color: gray;
     --header-background-color: black;
@@ -8,19 +8,24 @@
 }
 
 body {
-    background: var(--primary-background-color);
+    background: black;
     margin: 0 auto;
     max-width: 70rem;
+}
+
+header, footer {
+    background: var(--primary-color-dark);
 }
 
 .button,
 .button:visited {
     display: inline-block;
-    background: var(--primary-background-color);
+    background: rgb(100,100,100);
     color: white;
     text-decoration: none;
     padding: 0.5em 1em;
     cursor: pointer;
+    border-radius: 8px;
 }
 
 .button:hover,
