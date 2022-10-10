@@ -5,13 +5,16 @@ header {
 }
 
 .header-brand-icon {
-    padding: 1em;
+    font-family: var(--title-font-family);
+    font-size: 3em;
 }
 
 .header-title {
-    padding: 1em;
+    font-family: var(--title-font-family);
+    font-size: 3em;
 }
 
-.header-cart-icon {
-    padding: 1em;
+.header-profile-icon {
+    margin-top: 0.5em;
+    font-size: 2em;
 }
