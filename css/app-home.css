@@ -11,7 +11,8 @@
 }
 
 .home-container {
-    background: var(--primary-color-dark);
+    /* background: var(--primary-color-dark); */
+    background-color: rgba(0, 0, 139, 0.75);
     grid-column: 2;
     padding: 1em;
     color: white;
