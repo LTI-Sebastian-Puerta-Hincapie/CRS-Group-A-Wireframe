@@ -4,14 +4,14 @@
 }
 
 .side-container {
-    background: rgba(203, 203, 209, 0.90);
+    background: var(--side-pane-background-color);
     grid-column: 1;
     padding: 1em;
     text-align: center;
 }
 
 .home-container {
-    background-color: rgba(166, 166, 179, 0.85);
+    background-color: var(--home-pane-background-color);
     grid-column: 2;
     padding: 1em;
     color: white;

@@ -1,5 +1,5 @@
 .student-container {
-    background-color: rgba(0, 0, 139, 0.75);
+    background-color: var(--home-pane-background-color);
     grid-column: 2;
     padding: 1em;
     color: white;
