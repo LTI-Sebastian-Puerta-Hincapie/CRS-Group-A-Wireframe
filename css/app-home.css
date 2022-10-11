@@ -4,14 +4,14 @@
 }
 
 .side-container {
-    background: var(--primary-color);
+    background: rgba(203, 203, 209, 0.90);
     grid-column: 1;
     padding: 1em;
     text-align: center;
 }
 
 .home-container {
-    background: var(--primary-color-dark);
+    background-color: rgba(166, 166, 179, 0.85);
     grid-column: 2;
     padding: 1em;
     color: white;
@@ -19,6 +19,5 @@
 }
 
 a.button {
-    padding: 0.5em;
     margin-top: 1em;
 }

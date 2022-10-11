@@ -4,14 +4,22 @@ header {
     justify-content: space-between; 
 }
 
-.header-brand-icon {
-    padding: 1em;
+.header-brand-icon .brand-1 {
+    font-family: var(--title-font-family);
+    font-size: 3em;
+}
+
+.header-brand-icon .brand-2 {
+    font-family: var(--title-font-family);
+    font-size: 1em;
 }
 
 .header-title {
-    padding: 1em;
+    font-family: var(--title-font-family);
+    font-size: 3em;
 }
 
-.header-cart-icon {
-    padding: 1em;
+.header-profile-icon {
+    margin-top: 0.5em;
+    font-size: 2em;
 }
