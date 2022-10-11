@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Caveat");
-@import url("https://fonts.googleapis.com/css?family=Dosis");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 
 :root {
 
     --title-font-family: "Caveat";
-    --default-font-fami: "Dosis";
+    --default-font-fami: "Roboto";
 
     --primary-color: rgb(28, 74, 172);
     --primary-color-dark: darkblue;
@@ -29,13 +29,13 @@ body {
 
 header, footer {
     /* background: var(--primary-color-dark); */
-    background-color: rgba(0, 0, 139, 0.75);
+    background-color: rgba(166, 166, 179, 0.85);
 }
 
 .button,
 .button:visited {
     display: inline-block;
-    background: var(--secondary-color);
+    background: var(--primary-color-dark);
     color: white;
     text-decoration: none;
     padding: 0.5em 2em;
