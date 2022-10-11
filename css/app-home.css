@@ -1,15 +1,3 @@
-.home-containers {
-    display: grid;
-    grid-template-columns: 25% 75%;
-}
-
-.side-container {
-    background: var(--side-pane-background-color);
-    grid-column: 1;
-    padding: 1em;
-    text-align: center;
-}
-
 .home-container {
     background-color: var(--home-pane-background-color);
     grid-column: 2;
@@ -18,6 +6,6 @@
     text-align: center;
 }
 
-a.button {
-    margin-top: 1em;
+.form-label {
+    text-align: left;
 }

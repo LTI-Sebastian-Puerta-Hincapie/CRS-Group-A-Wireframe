@@ -1,0 +1,20 @@
+.side-container {
+    background: var(--side-pane-background-color);
+    grid-column: 1;
+    padding: 1em;
+    text-align: center;
+}
+
+.fa-house, 
+.fa-right-to-bracket,
+.fa-user,
+.fa-question,
+.fa-pen-to-square,
+.fa-user-plus {
+    margin-left: 0.5em;
+}
+
+a.button {
+    margin-top: 1em;
+}
+

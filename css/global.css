@@ -34,6 +34,11 @@ header, footer {
     background-color: var(--home-pane-background-color);
 }
 
+.home-containers {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
 .button,
 .button:visited {
     display: inline-block;
