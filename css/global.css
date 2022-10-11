@@ -55,3 +55,10 @@ header, footer {
     background: orange;
     color:white
 }
+
+.modal-title, 
+.form-label {
+    color: var(--primary-color-dark);
+}
+
+

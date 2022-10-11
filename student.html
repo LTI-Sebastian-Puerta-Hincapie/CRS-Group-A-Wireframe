@@ -35,11 +35,64 @@
         </header>
         <div class="home-containers"> 
             <section class="side-container"> 
-                <a class="button" href="index.html">Home</a><br>  
-                <a class="button" href=""> Profile </a><br>
-                <a class="button" href=""> Semester Registration </a><br>
-                <a class="button" href=""> Update Password </a><br>
-                <a class="button" href="about.html">About</a><br>    
+                <a class="button" href="index.html">
+                    Home
+                    <i class="fa-solid fa-house"></i>
+                </a><br>  
+                <a class="button" data-bs-toggle="modal" data-bs-target="#semesterRegistrationModal"> 
+                    Semester Registration 
+                    <i class="fa-solid fa-user-plus"></i>
+                </a><br>
+                <a class="button" data-bs-toggle="modal" data-bs-target="#updatePasswordModal"> 
+                    Update Password 
+                    <i class="fa-solid fa-pen-to-square"></i>
+                </a><br>
+                <a class="button" href="about.html">
+                    About
+                    <i class="fa-sharp fa-solid fa-question"></i>
+                </a><br> 
+
+                <!-- MODALS -->
+                <!-- Update Password Modal -->
+                <div class="modal" id="updatePasswordModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                    
+                            <div class="modal-header">
+                                <h4 class="modal-title"> Update Password </h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                    
+                            <div class="modal-body">
+                                Place Holder
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Semester Registration Modal -->
+                 <div class="modal" id="semesterRegistrationModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                    
+                            <div class="modal-header">
+                                <h4 class="modal-title"> Semester Registration </h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                    
+                            <div class="modal-body">
+                                Place Holder
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>                            
             </section>
             <section class="student-container">
                 <p><b>WELCOME STUDENT</b></p><br>

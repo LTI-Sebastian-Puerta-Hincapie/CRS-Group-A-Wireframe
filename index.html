@@ -39,47 +39,172 @@
                     Home
                     <i class="fa-solid fa-house"></i>
                 </a><br>  
-                <a class="button" href=""> 
-                    Profile 
-                    <i class="fa-regular fa-user"></i>
-                </a><br>
-                <a class="button" href=""> 
+                <a class="button" data-bs-toggle="modal" data-bs-target="#semesterRegistrationModal"> 
                     Semester Registration 
                     <i class="fa-solid fa-user-plus"></i>
                 </a><br>
-                <a class="button" href=""> 
+                <a class="button" data-bs-toggle="modal" data-bs-target="#updatePasswordModal"> 
                     Update Password 
                     <i class="fa-solid fa-pen-to-square"></i>
                 </a><br>
                 <a class="button" href="about.html">
                     About
                     <i class="fa-sharp fa-solid fa-question"></i>
-                </a><br>    
+                </a><br> 
+
+                <!-- MODALS -->
+                <!-- Update Password Modal -->
+                <div class="modal" id="updatePasswordModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                    
+                            <div class="modal-header">
+                                <h4 class="modal-title"> Update Password </h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                    
+                            <div class="modal-body">
+                                Place Holder
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Semester Registration Modal -->
+                 <div class="modal" id="semesterRegistrationModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                    
+                            <div class="modal-header">
+                                <h4 class="modal-title"> Semester Registration </h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                    
+                            <div class="modal-body">
+                                Place Holder
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>                            
             </section>
             <section class="home-container">
-                <span><b> WELCOME </b></span>
-                <form>
-                    <a type="submit" class="button" href="admin.html">Admin</a>
-                    <a type="submit" class="button" href="student.html">Student</a>
-                    <a type="submit" class="button" href="professor.html">Professor</a>
-                    <div class="mb-3 mt-3">
-                      <label for="email" class="form-label">Username:</label>
-                      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                <h2>Welcome</h2>  
+
+                <div class = "userRole"> 
+                    <a class="button" data-bs-toggle="modal" data-bs-target="#adminModal">Admin</a><br>
+                    <a class="button" data-bs-toggle="modal" data-bs-target="#studentModal">Student</a><br>
+                    <a class="button" data-bs-toggle="modal" data-bs-target="#professorModal">Professor</a><br>
+    
+                </div>
+
+                <!--Admin Modal -->
+                <div class="modal" id="adminModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                    
+                            <div class="modal-header">
+                                <h4 class="modal-title"> Admin Login </h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                    
+                            <div class="modal-body">
+                                <form class="adminLoginForm">
+                                    <div class="mb-3 mt-3">
+                                        <label for="username" class="form-label">Username:</label>
+                                        <input type="username" class="form-control" id="username" placeholder="Enter username" name="username">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="password" class="form-label">Password:</label>
+                                        <input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
+                                    </div>
+                                    <a type="submit" class="button" href="admin.html">
+                                        Sign-in
+                                        <i class="fa-solid fa-right-to-bracket"></i>
+                                    </a>
+                                </form>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Exit</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="mb-3">
-                      <label for="pwd" class="form-label">Password:</label>
-                      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                </div> 
+
+                <!--Student Modal -->
+                <div class="modal" id="studentModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                
+                        <div class="modal-header">
+                            <h4 class="modal-title"> Student Login </h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                
+                        <div class="modal-body">
+                            <form class="studentLoginForm">
+                                <div class="mb-3 mt-3">
+                                    <label for="username" class="form-label">Username:</label>
+                                    <input type="username" class="form-control" id="username" placeholder="Enter username" name="username">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">Password:</label>
+                                    <input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
+                                </div>
+                                <a type="submit" class="button" href="student.html">
+                                    Sign-in
+                                    <i class="fa-solid fa-right-to-bracket"></i>
+                                </a>
+                            </form>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Exit</button>
+                        </div>
                     </div>
-                    <div class="form-check mb-3">
-                      <label class="form-check-label">
-                        <input class="form-check-input" type="checkbox" name="remember"> Remember me
-                      </label>
+                </div>
+            </div> 
+
+            <!--Professor Modal -->
+            <div class="modal" id="professorModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                
+                        <div class="modal-header">
+                            <h4 class="modal-title"> Professor Login </h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                
+                        <div class="modal-body">
+                            <form class="professorLoginForm">
+                                <div class="mb-3 mt-3">
+                                    <label for="username" class="form-label">Username:</label>
+                                    <input type="username" class="form-control" id="username" placeholder="Enter username" name="username">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">Password:</label>
+                                    <input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
+                                </div>
+                                <a type="submit" class="button" href="professor.html">
+                                    Sign-in
+                                    <i class="fa-solid fa-right-to-bracket"></i>
+                                </a>
+                            </form>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Exit</button>
+                        </div>
                     </div>
-                    <a type="submit" class="button">
-                        Sign-in
-                        <i class="fa-solid fa-right-to-bracket"></i>
-                    </a>
-                  </form>
+                </div>
+            </div> 
             </section>
         </div>
         <footer class="container p-2 my-5 text-white">
