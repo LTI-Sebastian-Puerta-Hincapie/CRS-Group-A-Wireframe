@@ -9,3 +9,9 @@
 .student-options-list{
     text-align: left;
 }
+
+.student-profile-data {
+    text-align: left;
+    font-weight: bold;
+    color: var(--primary-color-dark);
+}
