@@ -30,28 +30,27 @@
                 <span><b> CRS </b></span> 
             </section>     
             <section class="header-profile-icon"> 
-                <i class="fa-solid fa-bars"></i>
-            </section>
-        </header>
-        <div class="home-containers"> 
-            <section class="side-container"> 
-                <a class="button" href="index.html">
-                    Home
-                    <i class="fa-solid fa-house"></i>
-                </a><br>  
-                <a class="button" data-bs-toggle="modal" data-bs-target="#semesterRegistrationModal"> 
-                    Semester Registration 
-                    <i class="fa-solid fa-user-plus"></i>
-                </a><br>
-                <a class="button" data-bs-toggle="modal" data-bs-target="#updatePasswordModal"> 
-                    Update Password 
-                    <i class="fa-solid fa-pen-to-square"></i>
-                </a><br>
-                <a class="button" href="about.html">
-                    About
-                    <i class="fa-sharp fa-solid fa-question"></i>
-                </a><br> 
-
+                <div class="header-menu-dropdown">
+                    <i class="fa-solid fa-bars"></i>
+                    <div class="dropdown-content">
+                      <a class = "menu-dropdown-item" href="index.html">
+                          Home
+                          <i class="fa-solid fa-house"></i>
+                        </a>
+                      <a class = "menu-dropdown-item" data-bs-toggle="modal" data-bs-target="#semesterRegistrationModal">
+                          Semester Registration
+                          <i class="fa-solid fa-user-plus"></i>
+                        </a>
+                      <a class = "menu-dropdown-item" data-bs-toggle="modal" data-bs-target="#updatePasswordModal">
+                          Update Password
+                          <i class="fa-solid fa-user-plus"></i>
+                        </a>
+                      <a class = "menu-dropdown-item" href="about.html">
+                          About
+                          <i class="fa-sharp fa-solid fa-question"></i>
+                        </a>
+                    </div>
+                  </div>
                 <!-- MODALS -->
                 <!-- Update Password Modal -->
                 <div class="modal" id="updatePasswordModal">
@@ -126,7 +125,15 @@
                             </div>
                         </div>
                     </div>
-                </div>                            
+                </div>        
+            </section>
+        </header>
+        <div class="home-containers"> 
+            <section class="side-container"> 
+                <a class="button" href="index.html">
+                    Home
+                    <i class="fa-solid fa-house"></i>
+                </a>                         
             </section>
             <section class="student-container">
                 <p><b>WELCOME THOMAS PARKER </b></p><br>

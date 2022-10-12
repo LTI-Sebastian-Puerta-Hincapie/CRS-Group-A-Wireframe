@@ -3,8 +3,7 @@
 
 :root {
 
-    --title-font-family: "Playfair Display";
-    --default-font-fami: "Roboto";
+    --default-font-family: "Playfair Display";
 
     --primary-color: rgb(28, 74, 172);
     --primary-color-dark: darkblue;
@@ -12,6 +11,7 @@
     --secondary-color: rgb(95, 164, 233);
     --side-pane-background-color:rgba(203, 203, 209, 0.90);
     --home-pane-background-color: rgba(166, 166, 179, 0.85);
+    --menu-dropdown-background-color: rgba(203, 203, 209, 0.95);
 }
 
 img {
@@ -26,7 +26,9 @@ body {
     background-size: 100%;
     background-repeat: no-repeat;
     margin: 0 auto;
-    max-width: 70rem;
+    max-width: 60rem;
+    min-width: 30rem;
+    font-family: var(--default-font-family);
 }
 
 header, footer {

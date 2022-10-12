@@ -5,3 +5,9 @@
     color: white;
     text-align: center;
 }
+
+.slide-show-item {
+    height: 300px;
+    /* width: 50px; */
+    display: block;
+}
