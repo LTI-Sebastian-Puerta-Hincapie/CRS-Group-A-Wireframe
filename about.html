@@ -34,11 +34,98 @@
         </header>
         <div class="home-containers"> 
             <section class="side-container"> 
-                <a class="button" href="index.html">Home</a><br>  
-                <a class="button" href=""> Profile </a><br>
-                <a class="button" href=""> Semester Registration </a><br>
-                <a class="button" href=""> Update Password </a><br>
-                <a class="button" href="about.html">About</a><br>    
+                <a class="button" href="index.html">
+                    Home
+                    <i class="fa-solid fa-house"></i>
+                </a><br>  
+                <a class="button" data-bs-toggle="modal" data-bs-target="#semesterRegistrationModal"> 
+                    Semester Registration 
+                    <i class="fa-solid fa-user-plus"></i>
+                </a><br>
+                <a class="button" data-bs-toggle="modal" data-bs-target="#updatePasswordModal"> 
+                    Update Password 
+                    <i class="fa-solid fa-pen-to-square"></i>
+                </a><br>
+                <a class="button" href="about.html">
+                    About
+                    <i class="fa-sharp fa-solid fa-question"></i>
+                </a><br> 
+
+                <!-- MODALS -->
+                <!-- Update Password Modal -->
+                <div class="modal" id="updatePasswordModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                    
+                            <div class="modal-header">
+                                <h4 class="modal-title"> Update Password </h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                    
+                            <div class="modal-body">
+                                <form class="updatePasswordForm">
+                                    <div class="mb-3 mt-3">
+                                        <label for="username" class="form-label">Username:</label>
+                                        <input type="username" class="form-control" id="username" placeholder="Enter username" name="username">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="password" class="form-label">Current Password:</label>
+                                        <input type="password" class="form-control" id="password" placeholder="Enter current password" name="password">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="password" class="form-label">New Password:</label>
+                                        <input type="password" class="form-control" id="password" placeholder="Enter new password" name="password">
+                                    </div>
+                                    <a type="submit" class="button" href="">
+                                        Update
+                                        <i class="fa-solid fa-right-to-bracket"></i>
+                                    </a>
+                                </form>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Exit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Semester Registration Modal -->
+                 <div class="modal" id="semesterRegistrationModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                    
+                            <div class="modal-header">
+                                <h4 class="modal-title"> Semester Registration </h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                    
+                            <div class="modal-body">
+                                <form class="semesterRegistrationForm">
+                                    <div class="mb-3 mt-3">
+                                        <label for="username" class="form-label">Admin Username:</label>
+                                        <input type="username" class="form-control" id="username" placeholder="Enter username" name="username">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="password" class="form-label">Admin Password:</label>
+                                        <input type="password" class="form-control" id="password" placeholder="Enter current password" name="password">
+                                    </div>
+                                    <div class="mb-3 mt-3">
+                                        <label for="studentId" class="form-label">Student ID:</label>
+                                        <input type="studentId" class="form-control" id="studentId" placeholder="Enter Student ID" name="studentId">
+                                    </div>
+                                    <a type="submit" class="button" href="">
+                                        Create Registration
+                                        <i class="fa-solid fa-right-to-bracket"></i>
+                                    </a>
+                                </form>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Exit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>                            
             </section>
             <section class="home-container">
                 <p> Java Fullstack 2022 Training Series </p><br>
