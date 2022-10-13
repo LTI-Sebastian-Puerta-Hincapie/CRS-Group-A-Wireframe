@@ -15,3 +15,67 @@
     font-weight: bold;
     color: var(--primary-color-dark);
 }
+
+.add-button,
+.add-button:visited {
+    display: inline-block;
+    background: green;
+    color: white;
+    text-decoration: none;
+    padding: 0.5em;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-left: 1em;
+}
+
+.drop-button,
+.drop-button:visited {
+    display: inline-block;
+    background: red;
+    color: white;
+    text-decoration: none;
+    padding: 0.5em;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-left: 1em;
+}
+
+.register-button,
+.register-button:visited {
+    display: inline-block;
+    background: var(--primary-color-dark);
+    color: white;
+    text-decoration: none;
+    padding: 0.5em;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-left: 1em;
+}
+
+.add-button:hover,
+.add-button:active,
+.drop-button:hover,
+.drop-button:active,
+.register-button:hover,
+.register-button:active {
+    background: orange;
+    color:white
+}
+
+.card {
+    margin-top: 1.5em;
+    text-align: left;
+    background-color: var(--menu-dropdown-background-color);
+    color: var(--primary-color-dark);
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 250px;
+    height: 60px;
+}
+
+.card-body {
+    text-align: center;
+}
+

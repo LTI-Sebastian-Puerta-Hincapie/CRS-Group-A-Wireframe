@@ -125,7 +125,7 @@
                             </div>
                         </div>
                     </div>
-                </div>        
+                </div> 
             </section>
         </header>
         <div class="home-containers"> 
@@ -140,8 +140,8 @@
                 <a class="button" data-bs-toggle="modal" data-bs-target="#viewProfileModal">View Profile</a>
                 <a class="button" data-bs-toggle="modal" data-bs-target="#viewGradesModal">View Grades</a> 
                 <a class="button" data-bs-toggle="modal" data-bs-target="#viewCoursesModal">View Courses</a> 
-                <a class="button" href="">Add/Drop Course</a> 
-                <a class="button" href="">Register for Course</a> 
+                <a class="button" data-bs-toggle="modal" data-bs-target="#addDropCourseModal">Add/Drop Course</a> 
+                <a class="button" data-bs-toggle="modal" data-bs-target="#registerCourseModal">Register for Course</a> 
                 <a class="button" data-bs-toggle="modal" data-bs-target="#makePaymentModal">Make a Payment</a> 
 
                 <!-- MODALS -->
@@ -287,6 +287,98 @@
                         </div>
                     </div>
                 </div> 
+                <!-- add/drop course Modal -->
+                <div class="modal" id="addDropCourseModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                    
+                            <div class="modal-header">
+                                <h4 class="modal-title"> Add/Drop Course </h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                    
+                            <div class="modal-body">
+                                <form class="addDropCourseForm">
+                                    <span> Department:</span>
+                                    <select class="form-select">
+                                        <option>Biology</option>
+                                        <option>Psychology</option>
+                                        <option>Economics</option>
+                                        <option>Mathematics</option>
+                                    </select>
+                                    <div class="course-selection">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                Biology 0
+                                            </div>
+                                        </div>
+                                        <a type="button" class="add-button"> Add </a>
+                                        <a type="button" class="drop-button"> Drop </a>
+                                    </div>
+                                    <div class="course-selection">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                Biology 1
+                                            </div>
+                                        </div>
+                                        <a type="button" class="add-button"> Add </a>
+                                        <a type="button" class="drop-button"> Drop </a>
+                                    </div>
+                                    <div class="course-selection">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                Biology 2
+                                            </div>
+                                        </div>
+                                        <a type="button" class="add-button"> Add </a>
+                                        <a type="button" class="drop-button"> Drop </a>
+                                    </div>
+                                </form>
+                                <a type="submit" class="button" href="">
+                                    Submit
+                                    <i class="fa-solid fa-right-to-bracket"></i>
+                                </a>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Exit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                <!-- register course Modal -->
+                <div class="modal" id="registerCourseModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                    
+                            <div class="modal-header">
+                                <h4 class="modal-title"> Register Course </h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                    
+                            <div class="modal-body">
+                                <form class="registerCourseForm">
+                                    <div class="course-selection">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                Biology 0
+                                            </div>
+                                        </div>
+                                        <a type="button" class="register-button"> Register </a>
+                                    </div>
+                                </form>
+                                <a type="submit" class="button" href="">
+                                    Submit
+                                    <i class="fa-solid fa-right-to-bracket"></i>
+                                </a>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Exit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>       
             </section>
         </div>
         <footer class="container p-2 my-5 text-white">
