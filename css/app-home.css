@@ -7,7 +7,6 @@
 }
 
 .slide-show-item {
-    height: auto;
-    width: 250px;
+    height: 225px;
     display: block;
 }
