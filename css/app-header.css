@@ -62,3 +62,16 @@ header {
 .menu-dropdown-item {
     color: white;
 }
+
+.fa-house, 
+.fa-right-to-bracket,
+.fa-user,
+.fa-question,
+.fa-pen-to-square,
+.fa-user-plus {
+    margin-left: 0.5em;
+}
+
+.modal-content {
+    font-size: 0.5em;
+}
